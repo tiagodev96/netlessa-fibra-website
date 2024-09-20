@@ -13,13 +13,17 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    pages: Page;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
   };
   db: {
     defaultIDType: number;
   };
-  globals: {};
+  globals: {
+    header: Header;
+    footer: Footer;
+  };
   locale: 'pt-br';
   user: User & {
     collection: 'users';
@@ -66,7 +70,7 @@ export interface User {
  */
 export interface Media {
   id: number;
-  alt: string;
+  alt?: string | null;
   updatedAt: string;
   createdAt: string;
   url?: string | null;
@@ -78,6 +82,18 @@ export interface Media {
   height?: number | null;
   focalX?: number | null;
   focalY?: number | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pages".
+ */
+export interface Page {
+  id: number;
+  name: string;
+  slug: string;
+  layout?: unknown[] | null;
+  updatedAt: string;
+  createdAt: string;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -112,6 +128,46 @@ export interface PayloadMigration {
   batch?: number | null;
   updatedAt: string;
   createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "header".
+ */
+export interface Header {
+  id: number;
+  logo: number | Media;
+  nav?:
+    | {
+        label?: string | null;
+        icon: number | Media;
+        link?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  cta: {
+    label: string;
+    link: string;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "footer".
+ */
+export interface Footer {
+  id: number;
+  logo: number | Media;
+  nav?:
+    | {
+        label?: string | null;
+        link?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  copyright: string;
+  updatedAt?: string | null;
+  createdAt?: string | null;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
