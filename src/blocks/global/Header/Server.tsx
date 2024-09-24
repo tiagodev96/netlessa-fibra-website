@@ -1,46 +1,27 @@
 import { getPayloadHMR } from '@payloadcms/next/utilities'
 import React from 'react'
 import config from '@payload-config'
-import Image from 'next/image'
 import { Media } from '@/payload-types'
+import HeaderBottomContent from './HeaderBottomContent'
+import HeaderTopContent from './HeaderTopContent'
 
 export default async function HeaderServer() {
   const payload = await getPayloadHMR({ config })
-  const header = await payload.findGlobal({ slug: 'header' })
-  console.log('🚀 ~ HeaderServer ~ header:', header)
-  const logo = header.logo as Media
+  const { logo, nav, cta } = await payload.findGlobal({ slug: 'header' })
+  const pages = await payload.find({
+    collection: 'pages',
+  })
+  const validNav = (nav ?? []).map((item) => ({
+    id: item.id ?? '',
+    label: item.label ?? '',
+    link: item.link ?? '',
+    icon: item.icon as Media,
+  }))
 
   return (
     <header>
-      <div className="flex justify-between section-container py-6">
-        <div className="relative w-52 h-12">
-          <Image
-            src={logo.url as string}
-            alt={logo.alt as string}
-            sizes="100vw"
-            fill
-            className="object-contain"
-          />
-        </div>
-
-        <nav>
-          <ul className="flex">
-            {header?.nav?.map((item) => {
-              const icon = item.icon as Media
-              return (
-                <a
-                  key={item.id}
-                  href={item.link as string}
-                  className="flex flex-col items-center justify-center mr-8"
-                >
-                  <Image src={icon.url as string} width={24} height={24} alt="" />
-                  <li>{item.label}</li>
-                </a>
-              )
-            })}
-          </ul>
-        </nav>
-      </div>
+      <HeaderTopContent />
+      <HeaderBottomContent logo={logo as Media} nav={validNav} cta={cta} pages={pages.docs} />
     </header>
   )
 }

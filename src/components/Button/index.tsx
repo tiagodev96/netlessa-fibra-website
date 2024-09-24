@@ -10,7 +10,8 @@ type ButtonProps = {
 
 export default function Button({ link, children, icon }: ButtonProps) {
   const primaryButton = 'bg-blue text-white hover:bg-white hover:border-blue hover:text-blue'
-  const iconButton = 'bg-green text-black hover:bg-black hover:text-green'
+  const iconButton =
+    'bg-green border-green text-black hover:bg-black hover:text-green hover:border-black'
 
   const handleClick = () => {
     if (link) {
@@ -22,8 +23,9 @@ export default function Button({ link, children, icon }: ButtonProps) {
   return (
     <button
       onClick={() => handleClick()}
-      className={`py-2 px-5 border-transparent border-[1px] rounded-[6px] text-[16px] transition-all ease-in-out duration-300 ${icon ? iconButton : primaryButton}`}
+      className={`flex items-center gap-2 py-2 px-5 border border-transparent rounded-[6px] text-[16px] transition-all ease-in-out duration-150 ${icon ? iconButton : primaryButton}`}
     >
+      {icon && icon}
       {children}
     </button>
   )
