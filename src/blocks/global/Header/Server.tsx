@@ -11,7 +11,7 @@ export default async function HeaderServer() {
   const pages = await payload.find({
     collection: 'pages',
   })
-  const validNav = (nav ?? []).map((item) => ({
+  const validNav = (nav ?? []).map((item: any) => ({
     id: item.id ?? '',
     label: item.label ?? '',
     link: item.link ?? '',
