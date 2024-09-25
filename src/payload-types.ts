@@ -187,9 +187,15 @@ export interface Header {
 export interface Footer {
   id: number;
   logo: number | Media;
-  nav?:
+  address: string;
+  phone_number: string;
+  email: string;
+  pages?: (number | Page)[] | null;
+  legal_pages?: (number | Page)[] | null;
+  socials?:
     | {
-        label?: string | null;
+        social_name?: string | null;
+        icon?: (number | null) | Media;
         link?: string | null;
         id?: string | null;
       }[]
