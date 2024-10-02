@@ -6,26 +6,29 @@ type ButtonProps = {
   link?: string
   children: ReactNode
   icon?: ReactNode
+  isHero?: boolean
 }
 
-export default function Button({ link, children, icon }: ButtonProps) {
-  const primaryButton = 'bg-blue text-white hover:bg-white hover:border-blue hover:text-blue'
-  const iconButton =
+export default function Button({ link, children, icon, isHero }: ButtonProps) {
+  const primaryButtonClasses = 'bg-blue text-white hover:bg-white hover:border-blue hover:text-blue'
+  const iconButtonClasses =
     'bg-green border-green text-black hover:bg-black hover:text-green hover:border-black'
+  const heroButtonClasses =
+    'bg-transparent text-white hover:bg-white hover:border-blue hover:text-blue'
+  const baseButtonClasses =
+    'flex items-center gap-2 py-2 px-5 border border-transparent rounded-[6px] text-[16px] transition-all ease-in-out duration-150'
 
   const handleClick = () => {
     if (link) {
-      return window.open(link, '_blank')
+      window.open(link, '_blank')
     }
-    return
   }
 
+  const buttonClasses = icon ? iconButtonClasses : isHero ? heroButtonClasses : primaryButtonClasses
+
   return (
-    <button
-      onClick={() => handleClick()}
-      className={`flex items-center gap-2 py-2 px-5 border border-transparent rounded-[6px] text-[16px] transition-all ease-in-out duration-150 ${icon ? iconButton : primaryButton}`}
-    >
-      {icon && icon}
+    <button onClick={handleClick} className={`${baseButtonClasses} ${buttonClasses}`}>
+      {icon && <span>{icon}</span>}
       {children}
     </button>
   )

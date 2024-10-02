@@ -1,7 +1,3 @@
-import React from 'react'
+import PageTemplate from './[slug]/page'
 
-const Index = () => {
-  return <div>Index</div>
-}
-
-export default Index
+export default PageTemplate

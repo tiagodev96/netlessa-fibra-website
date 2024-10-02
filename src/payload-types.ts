@@ -93,7 +93,28 @@ export interface Page {
   id: number;
   name: string;
   slug: string;
-  layout?: unknown[] | null;
+  layout?:
+    | {
+        carousel?:
+          | {
+              content_image: number | Media;
+              ctas?:
+                | {
+                    label: string;
+                    icon?: (number | null) | Media;
+                    link: string;
+                    id?: string | null;
+                  }[]
+                | null;
+              background: number | Media;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'banner';
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }
