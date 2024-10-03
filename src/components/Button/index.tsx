@@ -17,7 +17,7 @@ export default function Button({ link, children, icon, isHero, targetBlank }: Bu
   const heroButtonClasses =
     'bg-transparent text-white hover:bg-white hover:border-blue hover:text-blue'
   const baseButtonClasses =
-    'flex items-center gap-2 py-2 px-5 border border-transparent rounded-[6px] text-[16px] transition-all ease-in-out duration-150'
+    'flex items-center justify-center gap-2 py-2 px-5 border border-transparent rounded-[6px] text-[16px] transition-all ease-in-out duration-150'
 
   const handleClick = () => {
     if (link) {

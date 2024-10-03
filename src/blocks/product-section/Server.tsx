@@ -1,4 +1,5 @@
-import Button from '@/components/Button'
+import ProductSectionHeader from '@/components/ProductSection/ProductSectionHeader'
+import ProductsList from '@/components/ProductSection/ProductsList'
 import React from 'react'
 
 type ProductSectionBlockServerProps = {
@@ -11,27 +12,33 @@ type ProductSectionBlockServerProps = {
     text: string
     link: string
   }[]
+  products_list: {
+    id: number
+    name: string
+    description: string
+    link: string
+    cover_image: {
+      id: string
+      url: string
+      alt: string
+    }
+  }[]
 }
 
 export default function ProductSectionBlockServer(props: ProductSectionBlockServerProps) {
-  const { id, tag, section_title, section_description, cta } = props
+  const { tag, section_title, section_description, cta, products_list } = props
 
   return (
-    <div className="section-container py-24">
-      <header className="flex justify-between items-end">
-        <div className="flex flex-col gap-2">
-          <p className="tag">{tag}</p>
-          <h2 className="section-title mb-2">{section_title}</h2>
-          <h2 className="paragraph">{section_description}</h2>
-        </div>
-        <div className="flex gap-2">
-          {cta.map((cta, index) => (
-            <Button key={index} link={cta.link}>
-              {cta.text}
-            </Button>
-          ))}
-        </div>
-      </header>
-    </div>
+    <section className="section-container py-24">
+      <ProductSectionHeader
+        cta={cta}
+        section_description={section_description}
+        section_title={section_title}
+        tag={tag}
+      />
+      <div className="mt-20">
+        <ProductsList products_list={products_list} />
+      </div>
+    </section>
   )
 }

@@ -1,10 +1,10 @@
 import { Block } from 'payload'
 
-export const ProductSection: Block = {
-  slug: 'product_section',
+export const ClientServiceSection: Block = {
+  slug: 'client_service_section',
   labels: {
-    singular: 'Seção de produtos',
-    plural: 'Seções de produtos',
+    singular: 'Seção de serviços ao cliente',
+    plural: 'Seções de serviços ao cliente',
   },
   fields: [
     {
@@ -22,17 +22,31 @@ export const ProductSection: Block = {
     {
       name: 'section_description',
       label: 'Descrição da seção',
-      type: 'textarea',
+      type: 'text',
       required: true,
     },
     {
       name: 'cta',
       label: 'Chamada para ação',
+      maxRows: 2,
       type: 'array',
       fields: [
         {
-          name: 'text',
-          label: 'Texto do botão',
+          name: 'icon',
+          label: 'Ícone',
+          type: 'upload',
+          relationTo: 'media',
+          required: true,
+        },
+        {
+          name: 'title',
+          label: 'Título',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'description',
+          label: 'Descrição',
           type: 'text',
           required: true,
         },
@@ -43,14 +57,6 @@ export const ProductSection: Block = {
           required: true,
         },
       ],
-    },
-    {
-      name: 'products_list',
-      label: 'Lista de Produtos',
-      type: 'relationship',
-      relationTo: 'products',
-      required: true,
-      hasMany: true,
     },
   ],
 }

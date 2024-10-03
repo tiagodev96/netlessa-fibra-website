@@ -127,9 +127,27 @@ export interface Page {
                   id?: string | null;
                 }[]
               | null;
+            products_list: (number | Product)[];
             id?: string | null;
             blockName?: string | null;
             blockType: 'product_section';
+          }
+        | {
+            tag: string;
+            section_title: string;
+            section_description: string;
+            cta?:
+              | {
+                  icon: number | Media;
+                  title: string;
+                  description: string;
+                  link: string;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'client_service_section';
           }
       )[]
     | null;
