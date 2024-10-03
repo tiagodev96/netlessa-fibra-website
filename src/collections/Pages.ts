@@ -1,5 +1,6 @@
 import { Banner } from '@/blocks/banner/schema'
 import { ClientServiceSection } from '@/blocks/client-service/Schema'
+import { ContactSectionBlock } from '@/blocks/contact-section/Schema'
 import { ProductSection } from '@/blocks/product-section/Schema'
 import { CollectionConfig } from 'payload'
 
@@ -32,7 +33,7 @@ export const Pages: CollectionConfig = {
       name: 'layout',
       label: 'Layout',
       type: 'blocks',
-      blocks: [Banner, ProductSection, ClientServiceSection],
+      blocks: [Banner, ProductSection, ClientServiceSection, ContactSectionBlock],
     },
   ],
 }
