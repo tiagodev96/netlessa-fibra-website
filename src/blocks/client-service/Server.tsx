@@ -1,4 +1,4 @@
-import ClientServiceGridCTA from '@/components/ClientServiceSection/ClientServiceGridCTA'
+import ClientServiceCTA from '@/components/ClientServiceSection/ClientServiceCTA'
 import ClientServiceHeader from '@/components/ClientServiceSection/ClientServiceHeader'
 import Image from 'next/image'
 
@@ -32,7 +32,7 @@ export default function ClientServiceSectionBlock(props: ClientServiceSectionBlo
             section_title={section_title}
             section_description={section_description}
           />
-          <ClientServiceGridCTA cta={cta} />
+          <ClientServiceCTA cta={cta} />
         </div>
       </div>
     </section>
