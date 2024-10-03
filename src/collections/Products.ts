@@ -6,6 +6,9 @@ export const Products: CollectionConfig = {
     singular: 'Produto',
     plural: 'Produtos',
   },
+  admin: {
+    useAsTitle: 'name',
+  },
   fields: [
     {
       name: 'cover_image',
