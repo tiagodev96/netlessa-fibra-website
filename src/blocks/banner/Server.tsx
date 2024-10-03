@@ -20,7 +20,6 @@ type BannerProps = {
 }
 
 export default function BannerBlockServer({ carousel }: BannerProps) {
-  console.log(carousel)
   return (
     <>
       <Swiper className="mySwiper">

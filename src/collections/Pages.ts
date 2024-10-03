@@ -1,4 +1,5 @@
 import { Banner } from '@/blocks/banner/schema'
+import { ProductSection } from '@/blocks/product-section/Schema'
 import { CollectionConfig } from 'payload'
 
 export const Pages: CollectionConfig = {
@@ -30,7 +31,7 @@ export const Pages: CollectionConfig = {
       name: 'layout',
       label: 'Layout',
       type: 'blocks',
-      blocks: [Banner],
+      blocks: [Banner, ProductSection],
     },
   ],
 }

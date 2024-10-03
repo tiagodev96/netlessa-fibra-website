@@ -13,6 +13,7 @@ import { Header } from './globals/Header'
 import { Footer } from './globals/Footer'
 
 import { s3Storage } from '@payloadcms/storage-s3'
+import { Products } from './collections/Products'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
@@ -24,7 +25,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media, Pages],
+  collections: [Users, Media, Pages, Products],
   globals: [Header, Footer],
   localization: {
     locales: ['pt-br'],

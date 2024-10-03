@@ -7,6 +7,10 @@
     @apply max-w-[1440px] mx-auto px-8;
   }
 
+  .section-title {
+    @apply text-gray text-[36px] font-medium;
+  }
+
   .tag {
     @apply text-blue text-[14px] font-bold;
   }

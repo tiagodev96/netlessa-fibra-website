@@ -7,9 +7,10 @@ type ButtonProps = {
   children: ReactNode
   icon?: ReactNode
   isHero?: boolean
+  targetBlank?: boolean
 }
 
-export default function Button({ link, children, icon, isHero }: ButtonProps) {
+export default function Button({ link, children, icon, isHero, targetBlank }: ButtonProps) {
   const primaryButtonClasses = 'bg-blue text-white hover:bg-white hover:border-blue hover:text-blue'
   const iconButtonClasses =
     'bg-green border-green text-black hover:bg-black hover:text-green hover:border-black'
@@ -20,7 +21,7 @@ export default function Button({ link, children, icon, isHero }: ButtonProps) {
 
   const handleClick = () => {
     if (link) {
-      window.open(link, '_blank')
+      targetBlank ? window.open(link, '_blank') : window.open(link, '_self')
     }
   }
 

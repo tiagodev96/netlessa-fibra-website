@@ -1,8 +1,9 @@
 import BannerBlockServer from '@/blocks/banner/Server'
+import ProductSectionBlockServer from '@/blocks/product-section/Server'
 import { Page } from '@/payload-types'
 import React, { Fragment } from 'react'
 
-const blockComponents = { banner: BannerBlockServer }
+const blockComponents = { banner: BannerBlockServer, product_section: ProductSectionBlockServer }
 
 export const RenderBlocks: React.FC<{
   blocks: Page['layout']

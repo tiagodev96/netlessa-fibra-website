@@ -14,6 +14,7 @@ export interface Config {
     users: User;
     media: Media;
     pages: Page;
+    products: Product;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -94,27 +95,57 @@ export interface Page {
   name: string;
   slug: string;
   layout?:
-    | {
-        carousel?:
-          | {
-              content_image: number | Media;
-              ctas?:
-                | {
-                    label: string;
-                    icon?: (number | null) | Media;
-                    link: string;
-                    id?: string | null;
-                  }[]
-                | null;
-              background: number | Media;
-              id?: string | null;
-            }[]
-          | null;
-        id?: string | null;
-        blockName?: string | null;
-        blockType: 'banner';
-      }[]
+    | (
+        | {
+            carousel?:
+              | {
+                  content_image: number | Media;
+                  ctas?:
+                    | {
+                        label: string;
+                        icon?: (number | null) | Media;
+                        link: string;
+                        id?: string | null;
+                      }[]
+                    | null;
+                  background: number | Media;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'banner';
+          }
+        | {
+            tag: string;
+            section_title: string;
+            section_description: string;
+            cta?:
+              | {
+                  text: string;
+                  link: string;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'product_section';
+          }
+      )[]
     | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "products".
+ */
+export interface Product {
+  id: number;
+  cover_image: number | Media;
+  name: string;
+  description: string;
+  link: string;
   updatedAt: string;
   createdAt: string;
 }
@@ -136,6 +167,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'pages';
         value: number | Page;
+      } | null)
+    | ({
+        relationTo: 'products';
+        value: number | Product;
       } | null);
   globalSlug?: string | null;
   user: {
