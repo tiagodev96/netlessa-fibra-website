@@ -11,6 +11,7 @@ export default {
       gray: '#3d3d3d',
       black: '#000a14',
       white: '#fefefe',
+      error: '#ff0033',
     },
     extend: {
       borderRadius: {

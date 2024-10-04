@@ -149,6 +149,15 @@ export interface Page {
             blockName?: string | null;
             blockType: 'client_service_section';
           }
+        | {
+            image: number | Media;
+            tag: string;
+            section_title: string;
+            section_description: string;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'contact_section';
+          }
       )[]
     | null;
   updatedAt: string;
