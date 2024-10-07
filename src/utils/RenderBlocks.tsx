@@ -4,11 +4,15 @@ import ClientServiceSectionBlockServer from '@/blocks/client-service/Server'
 
 import { Page } from '@/payload-types'
 import React, { Fragment } from 'react'
+import ContactSectionBlockServer from '@/blocks/contact-section/Server'
+import TestimonialsBlockSection from '@/blocks/testimonials/Server'
 
 const blockComponents = {
   banner: BannerBlockServer,
   product_section: ProductSectionBlockServer,
   client_service_section: ClientServiceSectionBlockServer,
+  contact_section: ContactSectionBlockServer,
+  testimonials: TestimonialsBlockSection,
 }
 
 export const RenderBlocks: React.FC<{

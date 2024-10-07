@@ -149,6 +149,32 @@ export interface Page {
             blockName?: string | null;
             blockType: 'client_service_section';
           }
+        | {
+            image: number | Media;
+            tag: string;
+            section_title: string;
+            section_description: string;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'contact_section';
+          }
+        | {
+            title: string;
+            description: string;
+            user_testimonials?:
+              | {
+                  rating: number;
+                  name: string;
+                  comment: string;
+                  neighbourhood: string;
+                  avatar?: (number | null) | Media;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'testimonials';
+          }
       )[]
     | null;
   updatedAt: string;
