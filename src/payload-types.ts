@@ -158,6 +158,23 @@ export interface Page {
             blockName?: string | null;
             blockType: 'contact_section';
           }
+        | {
+            title: string;
+            description: string;
+            user_testimonials?:
+              | {
+                  rating: number;
+                  name: string;
+                  comment: string;
+                  neighbourhood: string;
+                  avatar?: (number | null) | Media;
+                  id?: string | null;
+                }[]
+              | null;
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'testimonials';
+          }
       )[]
     | null;
   updatedAt: string;
