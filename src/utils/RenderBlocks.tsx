@@ -6,6 +6,7 @@ import { Page } from '@/payload-types'
 import React, { Fragment } from 'react'
 import ContactSectionBlockServer from '@/blocks/contact-section/Server'
 import TestimonialsBlockSection from '@/blocks/testimonials/Server'
+import BlogSectionBlock from '@/blocks/blog-section/Server'
 
 const blockComponents = {
   banner: BannerBlockServer,
@@ -13,6 +14,7 @@ const blockComponents = {
   client_service_section: ClientServiceSectionBlockServer,
   contact_section: ContactSectionBlockServer,
   testimonials: TestimonialsBlockSection,
+  blog_section: BlogSectionBlock,
 }
 
 export const RenderBlocks: React.FC<{
