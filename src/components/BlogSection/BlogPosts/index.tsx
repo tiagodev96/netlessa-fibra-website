@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight } from 'lucide-react' // Certifique-se de importar o ícone ArrowRight corretamente
+import { ArrowRight } from 'lucide-react'
 import Post from '../Post'
 import { Button } from '@/components/ui/button'
 
@@ -27,7 +27,7 @@ const BlogPosts: React.FC<BlogPostsProps> = ({ posts }) => {
         ))}
       </div>
       <div className="flex justify-end mt-10">
-        <Button variant="outline">
+        <Button className="bg-blue text-white border border-transparent hover:border-blue hover:text-blue hover:bg-transparent">
           Ver todos
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
