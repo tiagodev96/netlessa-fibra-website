@@ -1,4 +1,5 @@
 import { Banner } from '@/blocks/banner/schema'
+import { BlogSectionSchema } from '@/blocks/blog-section/Schema'
 import { ClientServiceSection } from '@/blocks/client-service/Schema'
 import { ContactSectionBlock } from '@/blocks/contact-section/Schema'
 import { ProductSection } from '@/blocks/product-section/Schema'
@@ -40,6 +41,7 @@ export const Pages: CollectionConfig = {
         ClientServiceSection,
         ContactSectionBlock,
         TestimonialsBlock,
+        BlogSectionSchema,
       ],
     },
   ],

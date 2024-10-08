@@ -15,6 +15,8 @@ export interface Config {
     media: Media;
     pages: Page;
     products: Product;
+    posts: Post;
+    categories: Category;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
     'payload-migrations': PayloadMigration;
@@ -175,6 +177,15 @@ export interface Page {
             blockName?: string | null;
             blockType: 'testimonials';
           }
+        | {
+            tag: string;
+            title: string;
+            description: string;
+            posts: (number | Post)[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'blog_section';
+          }
       )[]
     | null;
   updatedAt: string;
@@ -190,6 +201,46 @@ export interface Product {
   name: string;
   description: string;
   link: string;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts".
+ */
+export interface Post {
+  id: number;
+  cover_image: number | Media;
+  name: string;
+  slug: string;
+  category: number | Category;
+  excerpt: string;
+  content: {
+    root: {
+      type: string;
+      children: {
+        type: string;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  };
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "categories".
+ */
+export interface Category {
+  id: number;
+  name: string;
+  slug: string;
   updatedAt: string;
   createdAt: string;
 }
@@ -215,6 +266,14 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'products';
         value: number | Product;
+      } | null)
+    | ({
+        relationTo: 'posts';
+        value: number | Post;
+      } | null)
+    | ({
+        relationTo: 'categories';
+        value: number | Category;
       } | null);
   globalSlug?: string | null;
   user: {

@@ -22,7 +22,6 @@ type TestimonialsBlockSectionProps = {
 }
 
 export default function TestimonialsBlockSection(props: TestimonialsBlockSectionProps) {
-  console.log('🚀 ~ TestimonialsBlockSection ~ props:', props)
   const { title, description, user_testimonials } = props
 
   return (
