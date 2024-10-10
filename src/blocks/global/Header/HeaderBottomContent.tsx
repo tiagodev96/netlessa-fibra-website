@@ -21,6 +21,7 @@ type HeaderBottomContentProps = {
 }
 
 export default function HeaderBottomContent({ logo, nav, cta, pages }: HeaderBottomContentProps) {
+  const descPages = [...pages].reverse()
   return (
     <div className="flex justify-between section-container py-6">
       <div className="relative w-52 h-12">
@@ -54,7 +55,7 @@ export default function HeaderBottomContent({ logo, nav, cta, pages }: HeaderBot
         <div className="hidden xs:flex">
           <Button link={cta.link}>{cta.label}</Button>
         </div>
-        <BurguerMenu pages={pages} nav={nav} cta={cta} />
+        <BurguerMenu pages={descPages} nav={nav} cta={cta} />
       </nav>
     </div>
   )

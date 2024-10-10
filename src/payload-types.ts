@@ -186,6 +186,12 @@ export interface Page {
             blockName?: string | null;
             blockType: 'blog_section';
           }
+        | {
+            products: (number | Product)[];
+            id?: string | null;
+            blockName?: string | null;
+            blockType: 'product_plans';
+          }
       )[]
     | null;
   updatedAt: string;
@@ -201,6 +207,27 @@ export interface Product {
   name: string;
   description: string;
   link: string;
+  page_product: {
+    tag: string;
+    title: string;
+    description: string;
+  };
+  plans?:
+    | {
+        name: string;
+        is_highlighted?: boolean | null;
+        price: number;
+        features?:
+          | {
+              name: string;
+              icon?: (number | null) | Media;
+              id?: string | null;
+            }[]
+          | null;
+        whatsapp_text: string;
+        id?: string | null;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
 }

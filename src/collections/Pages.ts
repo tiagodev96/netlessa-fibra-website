@@ -2,6 +2,7 @@ import { Banner } from '@/blocks/banner/schema'
 import { BlogSectionSchema } from '@/blocks/blog-section/Schema'
 import { ClientServiceSection } from '@/blocks/client-service/Schema'
 import { ContactSectionBlock } from '@/blocks/contact-section/Schema'
+import { ProductPlansSchema } from '@/blocks/product-plans/Schema'
 import { ProductSection } from '@/blocks/product-section/Schema'
 import { TestimonialsBlock } from '@/blocks/testimonials/Schema'
 import { CollectionConfig } from 'payload'
@@ -42,6 +43,7 @@ export const Pages: CollectionConfig = {
         ContactSectionBlock,
         TestimonialsBlock,
         BlogSectionSchema,
+        ProductPlansSchema,
       ],
     },
   ],

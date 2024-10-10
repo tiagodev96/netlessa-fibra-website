@@ -36,5 +36,74 @@ export const Products: CollectionConfig = {
       type: 'text',
       required: true,
     },
+    {
+      name: 'page_product',
+      label: 'Página do Produto',
+      type: 'group',
+      fields: [
+        { name: 'tag', label: 'Tag', type: 'text', required: true },
+        {
+          name: 'title',
+          label: 'Título',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'description',
+          label: 'Descrição',
+          type: 'text',
+          required: true,
+        },
+      ],
+    },
+    {
+      name: 'plans',
+      label: 'Planos',
+      type: 'array',
+      fields: [
+        {
+          name: 'name',
+          label: 'Nome',
+          type: 'text',
+          required: true,
+        },
+        {
+          name: 'is_highlighted',
+          label: 'Destacar',
+          type: 'checkbox',
+        },
+        {
+          name: 'price',
+          label: 'Preço',
+          type: 'number',
+          required: true,
+        },
+        {
+          name: 'features',
+          label: 'Características',
+          type: 'array',
+          fields: [
+            {
+              name: 'name',
+              label: 'Nome',
+              type: 'text',
+              required: true,
+            },
+            {
+              name: 'icon',
+              label: 'Ícone',
+              type: 'upload',
+              relationTo: 'media',
+            },
+          ],
+        },
+        {
+          name: 'whatsapp_text',
+          label: 'Texto do WhatsApp',
+          type: 'textarea',
+          required: true,
+        },
+      ],
+    },
   ],
 }

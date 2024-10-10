@@ -7,6 +7,7 @@ import React, { Fragment } from 'react'
 import ContactSectionBlockServer from '@/blocks/contact-section/Server'
 import TestimonialsBlockSection from '@/blocks/testimonials/Server'
 import BlogSectionBlock from '@/blocks/blog-section/Server'
+import ProductPlansBlock from '@/blocks/product-plans/Server'
 
 const blockComponents = {
   banner: BannerBlockServer,
@@ -15,6 +16,7 @@ const blockComponents = {
   contact_section: ContactSectionBlockServer,
   testimonials: TestimonialsBlockSection,
   blog_section: BlogSectionBlock,
+  product_plans: ProductPlansBlock,
 }
 
 export const RenderBlocks: React.FC<{
