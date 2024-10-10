@@ -14,7 +14,9 @@ export default function PagesInfos({ pages }: PagesInfosProps) {
         <ul className="grid grid-cols-2 gap-y-3 gap-x-20">
           {pages.map((page) => (
             <Link key={page.id} href={page.slug}>
-              <li className="paragraph">{page.name}</li>
+              <li className="paragraph hover:-translate-y-0.5 transition-all duration-150">
+                {page.name}
+              </li>
             </Link>
           ))}
         </ul>

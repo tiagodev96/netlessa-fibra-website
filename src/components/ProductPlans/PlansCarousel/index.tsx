@@ -72,14 +72,14 @@ export default function PlansCarousel({ plans }: PlansCarouselProps) {
         {!isSinglePage && (
           <>
             <button
-              className={`absolute -left-10 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md ${prevBtnDisabled ? 'hidden' : ''}`}
+              className={`absolute -left-10 top-1/2 transform -translate-y-1/2 bg-green rounded-full p-2 shadow-md ${prevBtnDisabled ? 'hidden' : ''}`}
               onClick={scrollPrev}
               disabled={prevBtnDisabled}
             >
               <ChevronLeft className="h-6 w-6" />
             </button>
             <button
-              className={`absolute -right-12 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-md ${nextBtnDisabled ? 'hidden' : ''}`}
+              className={`absolute -right-12 top-1/2 transform -translate-y-1/2 bg-green rounded-full p-2 shadow-md ${nextBtnDisabled ? 'hidden' : ''}`}
               onClick={scrollNext}
               disabled={nextBtnDisabled}
             >
