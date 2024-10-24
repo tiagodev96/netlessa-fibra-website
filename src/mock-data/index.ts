@@ -19,6 +19,8 @@ import {
   mockTestimonials,
   mockBlogSection,
 } from "./homepage-mock";
+// Products Page
+import { mockProductsPage } from "./productspage-mock";
 
 export {
   mockPages,
@@ -35,4 +37,5 @@ export {
   mockContact,
   mockTestimonials,
   mockBlogSection,
+  mockProductsPage,
 };

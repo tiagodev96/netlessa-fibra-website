@@ -32,7 +32,7 @@ type BannerProps = {
 
 export default function Banner({ carousel }: BannerProps) {
   return (
-    <>
+    <section>
       <Swiper className="mySwiper">
         {carousel.map((slide) => (
           <SwiperSlide key={slide.id}>
@@ -66,6 +66,6 @@ export default function Banner({ carousel }: BannerProps) {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </section>
   );
 }
