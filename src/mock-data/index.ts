@@ -10,6 +10,8 @@ import {
   mockLegalPages,
   mockPagesFooter,
 } from "./mock-footer";
+// Homepage
+import { mockCarousel, mockProductsList } from "./homepage-mock";
 
 export {
   mockPages,
@@ -20,4 +22,6 @@ export {
   mockCopyright,
   mockLegalPages,
   mockPagesFooter,
+  mockCarousel,
+  mockProductsList,
 };
