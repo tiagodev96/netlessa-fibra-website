@@ -14,7 +14,8 @@ import {
 import {
   mockCarousel,
   mockProductsList,
-  clientServiceMockup,
+  mockClientService,
+  mockContact,
 } from "./homepage-mock";
 
 export {
@@ -28,5 +29,6 @@ export {
   mockPagesFooter,
   mockCarousel,
   mockProductsList,
-  clientServiceMockup,
+  mockClientService,
+  mockContact,
 };

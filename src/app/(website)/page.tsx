@@ -2,9 +2,10 @@ import React from "react";
 import {
   mockCarousel,
   mockProductsList,
-  clientServiceMockup,
+  mockClientService,
+  mockContact,
 } from "@/mock-data";
-import { Banner, ProductsSection } from "@/components";
+import { Banner, ContactSection, ProductsSection } from "@/components";
 import ClientServiceSection from "@/components/client-service";
 
 export default function Homepage() {
@@ -12,7 +13,8 @@ export default function Homepage() {
     <div>
       <Banner carousel={mockCarousel} />
       <ProductsSection {...mockProductsList} />
-      <ClientServiceSection {...clientServiceMockup} />
+      <ClientServiceSection {...mockClientService} />
+      <ContactSection {...mockContact} />
     </div>
   );
 }

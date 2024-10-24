@@ -109,7 +109,7 @@ export const mockProductsList = {
   ],
 };
 
-export const clientServiceMockup = {
+export const mockClientService = {
   id: "1",
   tag: "Praticidade para você",
   section_title: "Atendimento para nossos clientes",
@@ -135,4 +135,15 @@ export const clientServiceMockup = {
       link: "https://wa.me/5571986064654",
     },
   ],
+};
+
+export const mockContact = {
+  image: {
+    url: "/contact-section-image.png",
+    alt: "",
+  },
+  tag: "Contato direto com nosso time",
+  section_title: "Precisa de ajuda?",
+  section_description:
+    "Deseja contratar nosso serviço ou de alguma ajuda? Este formulário vai te encaminhar diretamente para nosso atendimento via whatsapp!",
 };
