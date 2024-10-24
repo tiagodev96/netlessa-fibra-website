@@ -147,3 +147,47 @@ export const mockContact = {
   section_description:
     "Deseja contratar nosso serviço ou de alguma ajuda? Este formulário vai te encaminhar diretamente para nosso atendimento via whatsapp!",
 };
+
+export const mockTestimonials = {
+  id: "1",
+  title: "Confiança que fala por si",
+  description: "Veja o que nossos clientes têm a dizer sobre nossos serviços",
+  user_testimonials: [
+    {
+      rating: 5,
+      name: "John Doe",
+      comment:
+        '"Desde que migrei para a internet fibra da NetLessa, minha experiência online melhorou drasticamente. A conexão é super estável e a velocidade é impressionante, mesmo em horários de pico. Posso trabalhar, jogar e assistir a vídeos em alta definição sem nenhum problema. A mudança foi realmente transformadora para o meu dia a dia!"',
+      neighbourhood: "Cabula",
+      avatar: {
+        id: "avatar1",
+        url: "/testimonials-avatars/john-doe.png",
+        alt: "Avatar de John Doe",
+      },
+    },
+    {
+      rating: 4,
+      name: "Jane Doe",
+      comment:
+        '"O combo de internet, TV HD e plano de celular oferecido é simplesmente fantástico! A qualidade da imagem da TV é excelente, e a internet nunca falha, com uma velocidade incrível. Além disso, o plano de celular tem ótimo custo-benefício e cobertura. É ótimo ter tudo em um só lugar com um atendimento ao cliente tão eficiente!"',
+      neighbourhood: "Tancredo Neves",
+      avatar: {
+        id: "avatar2",
+        url: "/testimonials-avatars/jane-doe.png",
+        alt: "Avatar de Jane Doe",
+      },
+    },
+    {
+      rating: 5,
+      name: "José Silva",
+      comment:
+        '"Estou realmente impressionado com o combo de internet, TV e celular da NetLessa! A velocidade da internet fibra é incrível; consigo transmitir séries em 4K sem interrupções e jogar online sem lag. A qualidade da TV é maravilhosa, com uma vasta seleção de canais. E o plano de celular tem uma cobertura excelente, além de ser super acessível. O suporte ao cliente também merece destaque, sempre pronto para ajudar. Sem dúvida, foi uma escolha que fez toda a diferença na minha rotina!"',
+      neighbourhood: "Saboeiro",
+      avatar: {
+        id: "avatar3",
+        url: "/testimonials-avatars/john-doe.png",
+        alt: "Avatar de José Silva",
+      },
+    },
+  ],
+};

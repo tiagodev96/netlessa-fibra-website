@@ -5,6 +5,7 @@ import Footer from "./globals/Footer";
 import Banner from "./banner";
 import ProductsSection from "./products-section";
 import ContactSection from "./contact-section";
+import TestimonialsSection from "./testimonials-section";
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   Banner,
   ProductsSection,
   ContactSection,
+  TestimonialsSection,
 };

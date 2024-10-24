@@ -4,8 +4,14 @@ import {
   mockProductsList,
   mockClientService,
   mockContact,
+  mockTestimonials,
 } from "@/mock-data";
-import { Banner, ContactSection, ProductsSection } from "@/components";
+import {
+  Banner,
+  ContactSection,
+  ProductsSection,
+  TestimonialsSection,
+} from "@/components";
 import ClientServiceSection from "@/components/client-service";
 
 export default function Homepage() {
@@ -15,6 +21,7 @@ export default function Homepage() {
       <ProductsSection {...mockProductsList} />
       <ClientServiceSection {...mockClientService} />
       <ContactSection {...mockContact} />
+      <TestimonialsSection {...mockTestimonials} />
     </div>
   );
 }

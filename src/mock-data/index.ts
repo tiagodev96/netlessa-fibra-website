@@ -16,6 +16,7 @@ import {
   mockProductsList,
   mockClientService,
   mockContact,
+  mockTestimonials,
 } from "./homepage-mock";
 
 export {
@@ -31,4 +32,5 @@ export {
   mockProductsList,
   mockClientService,
   mockContact,
+  mockTestimonials,
 };
