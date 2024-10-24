@@ -6,6 +6,7 @@ import Banner from "./banner";
 import ProductsSection from "./products-section";
 import ContactSection from "./contact-section";
 import TestimonialsSection from "./testimonials-section";
+import BlogSection from "./blog-section";
 
 export {
   Header,
@@ -16,4 +17,5 @@ export {
   ProductsSection,
   ContactSection,
   TestimonialsSection,
+  BlogSection,
 };

@@ -191,3 +191,50 @@ export const mockTestimonials = {
     },
   ],
 };
+
+export const mockBlogSection = {
+  id: "1",
+  tag: "Blog",
+  title: "Blog de Inovações e Dicas Tecnológicas",
+  slug: "index",
+  description:
+    "Fique por dentro das últimas tendências e descubra como aproveitar ao máximo nossos serviços e produtos",
+  posts: [
+    {
+      id: 1,
+      cover_image: {
+        url: "/posts/imagem-capa-post-1.png",
+        alt: "",
+      },
+      name: "Como Escolher o Melhor Plano de Internet para sua Casa",
+      category: {
+        name: "Dicas de Internet",
+      },
+      excerpt:
+        "Descubra os fatores essenciais para selecionar o plano de internet ideal para suas necessidades. Este guia ajuda você a tomar uma decisão informada para garantir uma conexão estável e eficiente.",
+      content: {
+        text: "Conteúdo do Post 1",
+        marks: [],
+        children: [],
+      },
+    },
+    {
+      id: 2,
+      cover_image: {
+        url: "/posts/imagem-capa-post-2.png",
+        alt: "",
+      },
+      name: "Os Benefícios do Combo: Internet, TV HD e Plano de Celular",
+      category: {
+        name: "Ofertas e Pacotes",
+      },
+      excerpt:
+        "Optar por um combo de internet, TV HD e plano de celular traz vantagens como economia, conveniência e uma experiência aprimorada. Com serviços integrados, você simplifica pagamentos e aproveita melhor as ofertas, garantindo qualidade e praticidade.",
+      content: {
+        text: "Conteúdo do Post 2",
+        marks: [],
+        children: [],
+      },
+    },
+  ],
+};
