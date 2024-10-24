@@ -108,3 +108,31 @@ export const mockProductsList = {
     },
   ],
 };
+
+export const clientServiceMockup = {
+  id: "1",
+  tag: "Praticidade para você",
+  section_title: "Atendimento para nossos clientes",
+  section_description:
+    "Clique na modalidade que mais te atende para ser redirecionado para a página.",
+  cta: [
+    {
+      id: "cta1",
+      icon: {
+        url: "/client-service/minha-fatura-icon.png",
+      },
+      title: "Minha Fatura",
+      description: "Mais facilidade para acessar sua fatura",
+      link: "https://wa.me/5571986064654",
+    },
+    {
+      id: "cta2",
+      icon: {
+        url: "/client-service/whatsapp-icon-1.png",
+      },
+      title: "Tirar Dúvidas",
+      description: "Entre em contato com nossos atendentes",
+      link: "https://wa.me/5571986064654",
+    },
+  ],
+};
