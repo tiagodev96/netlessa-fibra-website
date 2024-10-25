@@ -31,6 +31,7 @@ export const mockCompanyInfos = {
 export const mockPagesFooter: Page[] = [
   { id: "1", name: "Início", slug: "/" },
   { id: "2", name: "Produtos", slug: "/produtos" },
+  { id: "3", name: "Sobre nós", slug: "/sobre-nos" },
 ];
 
 export const mockLegalPages: Page[] = [

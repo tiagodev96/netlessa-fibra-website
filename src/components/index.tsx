@@ -7,6 +7,12 @@ import ProductsSection from "./products-section";
 import ContactSection from "./contact-section";
 import TestimonialsSection from "./testimonials-section";
 import BlogSection from "./blog-section";
+import HeaderAboutUs from "./about-us/header-about-us";
+import OurHistory from "./about-us/our-history";
+import HistoricalLandmarks from "./about-us/historical-landmarks";
+import OurPartners from "./about-us/our-partners";
+import OurValues from "./about-us/our-values";
+import OurTeam from "./about-us/our-team";
 
 export {
   Header,
@@ -18,4 +24,10 @@ export {
   ContactSection,
   TestimonialsSection,
   BlogSection,
+  HeaderAboutUs,
+  OurHistory,
+  HistoricalLandmarks,
+  OurPartners,
+  OurValues,
+  OurTeam,
 };
