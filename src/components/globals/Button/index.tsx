@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 type ButtonProps = {
   icon?: ReactNode;
   link?: string;
-  children: ReactNode;
+  children: ReactNode | string;
   targetBlank?: boolean;
   isHero?: boolean;
 };

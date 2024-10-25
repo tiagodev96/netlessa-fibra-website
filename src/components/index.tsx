@@ -13,6 +13,8 @@ import HistoricalLandmarks from "./about-us/historical-landmarks";
 import OurPartners from "./about-us/our-partners";
 import OurValues from "./about-us/our-values";
 import OurTeam from "./about-us/our-team";
+import FormContactSection from "./contact-us/contact-page-form/form-contact-page";
+import NetLessaLocalization from "./contact-us/net-lessa-localization";
 
 export {
   Header,
@@ -30,4 +32,6 @@ export {
   OurPartners,
   OurValues,
   OurTeam,
+  FormContactSection,
+  NetLessaLocalization,
 };
