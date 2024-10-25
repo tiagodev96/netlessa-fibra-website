@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { FieldError, UseFormRegister } from "react-hook-form";
+import { FieldError, FieldValues, UseFormRegister } from "react-hook-form";
 
 interface InputFieldProps {
   label: string;
   type?: string;
-  register: UseFormRegister<any>;
+  register: UseFormRegister<FieldValues>;
   name: string;
   error?: FieldError;
   isTextArea?: boolean;
