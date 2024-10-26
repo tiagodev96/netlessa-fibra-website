@@ -13,6 +13,7 @@ export default function StillHaveDoubts() {
         <Button
           link="https://wa.me/5571986064654"
           icon={<FaWhatsapp size={24} />}
+          targetBlank
         >
           Falar com suporte
         </Button>

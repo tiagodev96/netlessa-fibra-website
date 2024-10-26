@@ -1,31 +1,38 @@
-import Image from 'next/image'
-import { ArrowRight } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import Image from "next/image";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 type PostProps = {
   post: {
-    id: number
+    id: number;
     cover_image: {
-      url: string
-      alt: string | null
-    }
-    name: string
+      url: string;
+      alt: string | null;
+    };
+    name: string;
     category: {
-      name: string
-    }
-    excerpt: string
-  }
-}
+      name: string;
+    };
+    excerpt: string;
+  };
+  isHorizontal?: boolean;
+};
 
-const Post: React.FC<PostProps> = ({ post }) => {
+const Post: React.FC<PostProps> = ({ post, isHorizontal }) => {
+  const containerClass = isHorizontal
+    ? "flex-col space-y-4 lg:flex-row lg:space-x-4 lg:items-center"
+    : "flex-col space-y-4";
+
   return (
-    <div className="flex flex-col space-y-4">
+    <div className={`flex ${containerClass}`}>
       <Image
         src={post.cover_image.url}
         alt={post.cover_image.alt || post.name}
         width={600}
         height={400}
-        className="object-cover w-full h-[300px] rounded-[6px]"
+        className={`object-cover w-full h-[300px] rounded-[6px] ${
+          isHorizontal && "max-w-[632px]"
+        }`}
       />
       <div className="space-y-2">
         <div className="flex items-center">
@@ -41,7 +48,7 @@ const Post: React.FC<PostProps> = ({ post }) => {
         </Button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Post
+export default Post;

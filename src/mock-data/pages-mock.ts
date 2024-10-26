@@ -24,4 +24,9 @@ export const mockPages = [
     slug: "/faq",
     name: "FAQ",
   },
+  {
+    id: "6",
+    slug: "/blog",
+    name: "Blog",
+  },
 ];

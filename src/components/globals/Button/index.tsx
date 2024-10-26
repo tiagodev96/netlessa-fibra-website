@@ -7,6 +7,7 @@ type ButtonProps = {
   children: ReactNode | string;
   targetBlank?: boolean;
   isHero?: boolean;
+  onClick?: () => void;
 };
 
 export default function Button({
@@ -15,6 +16,7 @@ export default function Button({
   children,
   targetBlank,
   isHero,
+  onClick,
 }: ButtonProps) {
   const handleRedirection = () => {
     if (link) {
@@ -23,6 +25,14 @@ export default function Button({
         : window.open(link, "_self");
     }
   };
+
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    }
+    handleRedirection();
+  };
+
   const primaryButtonClasses =
     "bg-blue text-white hover:bg-white hover:border-blue hover:text-blue";
   const iconButtonClasses =
@@ -40,7 +50,7 @@ export default function Button({
 
   return (
     <button
-      onClick={handleRedirection}
+      onClick={handleClick}
       className={`${baseButtonClasses} ${buttonClasses}`}
     >
       {icon}

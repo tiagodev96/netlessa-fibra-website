@@ -18,6 +18,10 @@ import NetLessaLocalization from "./contact-us/net-lessa-localization";
 import FaqHeader from "./faq/faq-header";
 import Questions from "./faq/questions";
 import StillHaveDoubts from "./faq/still-have-doubts";
+import BlogHeader from "./blog/blog-header";
+import HighlightedPost from "./blog/highlighted-post";
+import Posts from "./blog/posts";
+import BlogContact from "./blog/blog-contact";
 
 export {
   Header,
@@ -40,4 +44,8 @@ export {
   FaqHeader,
   Questions,
   StillHaveDoubts,
+  BlogHeader,
+  HighlightedPost,
+  Posts,
+  BlogContact,
 };
