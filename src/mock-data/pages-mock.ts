@@ -29,4 +29,9 @@ export const mockPages = [
     slug: "/blog",
     name: "Blog",
   },
+  {
+    id: "7",
+    slug: "/termos",
+    name: "Termos de Serviço",
+  },
 ];

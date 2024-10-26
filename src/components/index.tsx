@@ -22,6 +22,8 @@ import BlogHeader from "./blog/blog-header";
 import HighlightedPost from "./blog/highlighted-post";
 import Posts from "./blog/posts";
 import BlogContact from "./blog/blog-contact";
+import ServiceTermsHeader from "./service-terms/service-terms-header";
+import ServiceTermsContent from "./service-terms/service-terms-content";
 
 export {
   Header,
@@ -48,4 +50,6 @@ export {
   HighlightedPost,
   Posts,
   BlogContact,
+  ServiceTermsHeader,
+  ServiceTermsContent,
 };
