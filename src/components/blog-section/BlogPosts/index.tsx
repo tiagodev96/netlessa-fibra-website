@@ -1,22 +1,23 @@
-import React from 'react'
-import { ArrowRight } from 'lucide-react'
-import Post from '../Post'
-import { Button } from '@/components/ui/button'
+import React from "react";
+import { ArrowRight } from "lucide-react";
+import Post from "../Post";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 type BlogPostsProps = {
   posts: {
-    id: number
+    id: number;
     cover_image: {
-      url: string
-      alt: string | null
-    }
-    name: string
+      url: string;
+      alt: string | null;
+    };
+    name: string;
     category: {
-      name: string
-    }
-    excerpt: string
-  }[]
-}
+      name: string;
+    };
+    excerpt: string;
+  }[];
+};
 
 const BlogPosts: React.FC<BlogPostsProps> = ({ posts }) => {
   return (
@@ -27,13 +28,15 @@ const BlogPosts: React.FC<BlogPostsProps> = ({ posts }) => {
         ))}
       </div>
       <div className="flex justify-end mt-10">
-        <Button className="bg-blue text-white border border-transparent hover:border-blue hover:text-blue hover:bg-transparent">
-          Ver todos
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+        <Link href="/blog">
+          <Button className="bg-blue text-white border border-transparent hover:border-blue hover:text-blue hover:bg-transparent">
+            Ver todos
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Button>
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default BlogPosts
+export default BlogPosts;
