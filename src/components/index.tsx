@@ -24,6 +24,8 @@ import Posts from "./blog/posts";
 import BlogContact from "./blog/blog-contact";
 import ServiceTermsHeader from "./service-terms/service-terms-header";
 import ServiceTermsContent from "./service-terms/service-terms-content";
+import PrivacyHeader from "./privacy/privacy-header";
+import PrivacyContent from "./privacy/privacy-content";
 
 export {
   Header,
@@ -52,4 +54,6 @@ export {
   BlogContact,
   ServiceTermsHeader,
   ServiceTermsContent,
+  PrivacyHeader,
+  PrivacyContent,
 };

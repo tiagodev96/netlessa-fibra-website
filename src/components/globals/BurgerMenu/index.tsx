@@ -30,6 +30,7 @@ type BurguerMenuProps = {
     id: string;
     slug: string;
     name: string;
+    isLegal: boolean;
   }[];
 };
 
@@ -50,16 +51,35 @@ export default function BurgerMenu({ pages, cta, nav }: BurguerMenuProps) {
         <SheetTitle className="text-blue mb-2">Páginas</SheetTitle>
         <Separator className="mb-2" />
         <nav className="flex flex-col space-y-4">
-          {pages.map((page) => (
-            <Link
-              key={page.id}
-              href={page.slug}
-              onClick={toggleMenu}
-              className="text-lg hover:underline"
-            >
-              {page.name}
-            </Link>
-          ))}
+          {pages
+            .filter((page) => !page.isLegal)
+            .map((page) => (
+              <Link
+                key={page.id}
+                href={page.slug}
+                onClick={toggleMenu}
+                className="text-lg hover:underline"
+              >
+                {page.name}
+              </Link>
+            ))}
+        </nav>
+
+        <SheetTitle className="text-blue mt-10 mb-2">Páginas Legais</SheetTitle>
+        <Separator className="mb-2" />
+        <nav className="flex flex-col space-y-4">
+          {pages
+            .filter((page) => page.isLegal)
+            .map((page) => (
+              <Link
+                key={page.id}
+                href={page.slug}
+                onClick={toggleMenu}
+                className="text-lg hover:underline"
+              >
+                {page.name}
+              </Link>
+            ))}
         </nav>
 
         <div className="flex flex-col lg:hidden">
