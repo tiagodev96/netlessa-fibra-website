@@ -18,7 +18,7 @@ const List: React.FC<{ items: React.ReactNode[] }> = ({ items }) => (
   </ul>
 );
 
-const ServiceTermsContent: React.FC = () => {
+const PrivacyContent: React.FC = () => {
   const sections = [
     {
       title: "1. Aceitação dos Termos",
@@ -174,8 +174,8 @@ const ServiceTermsContent: React.FC = () => {
         <p className="paragraph">
           Reservamos o direito de modificar, suspender ou descontinuar qualquer
           aspecto dos nossos Serviços a qualquer momento, com ou sem aviso
-          prévio. Não seremos responsáveis por qualquer alteração ou interrupção
-          dos Serviços.
+          prévio. Não seremos respons��veis por qualquer alteração ou
+          interrupção dos Serviços.
         </p>
       ),
     },
@@ -219,11 +219,12 @@ const ServiceTermsContent: React.FC = () => {
   return (
     <section className="section-container py-24 flex flex-col gap-6">
       <p className="paragraph">
-        Bem-vindo à Net Lessa Fibra! Estes Termos de Serviço (“Termos”) regem a
-        utilização dos nossos serviços de internet fibra, TV HD, câmera de
-        segurança e telefonia (“Serviços”). Ao contratar qualquer um dos nossos
-        Serviços, você concorda com estes Termos. Se não concordar, por favor,
-        não contrate nossos Serviços.
+        A Net Lessa Fibra (&quot;nós&quot;, &quot;nosso&quot;,
+        &quot;nossa&quot;) valoriza sua privacidade e está comprometida em
+        proteger suas informações pessoais. Esta Política de Privacidade
+        descreve como coletamos, usamos, armazenamos e protegemos suas
+        informações quando você utiliza nossos serviços de internet fibra, TV
+        HD, câmera de segurança e telefonia (coletivamente, “Serviços”).
       </p>
       {sections.map((section, index) => (
         <Section key={index} title={section.title}>
@@ -234,4 +235,4 @@ const ServiceTermsContent: React.FC = () => {
   );
 };
 
-export default ServiceTermsContent;
+export default PrivacyContent;
