@@ -15,6 +15,9 @@ import OurValues from "./about-us/our-values";
 import OurTeam from "./about-us/our-team";
 import FormContactSection from "./contact-us/contact-page-form/form-contact-page";
 import NetLessaLocalization from "./contact-us/net-lessa-localization";
+import FaqHeader from "./faq/faq-header";
+import Questions from "./faq/questions";
+import StillHaveDoubts from "./faq/still-have-doubts";
 
 export {
   Header,
@@ -34,4 +37,7 @@ export {
   OurTeam,
   FormContactSection,
   NetLessaLocalization,
+  FaqHeader,
+  Questions,
+  StillHaveDoubts,
 };
