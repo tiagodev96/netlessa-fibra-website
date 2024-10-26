@@ -19,12 +19,6 @@ export default function HeaderTopContent() {
           >
             Para você
           </Link>
-          <Link
-            href="/empresas"
-            className={`text-[14px] ${isCompany && "font-medium"}`}
-          >
-            Para empresas
-          </Link>
         </div>
 
         <Button
