@@ -52,7 +52,7 @@ export default function CoverageMap() {
   const [searchTerm, setSearchTerm] = useState("");
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
   const [pageCount, setPageCount] = useState(0);
 
   const availableBairros = Array.from(
