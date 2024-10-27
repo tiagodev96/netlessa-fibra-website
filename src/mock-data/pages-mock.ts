@@ -38,13 +38,19 @@ export const mockPages = [
   {
     id: "7",
     slug: "/termos",
-    name: "Termos de Serviço",
+    name: "Termos de serviço",
     isLegal: true,
   },
   {
     id: "8",
     slug: "/privacidade",
-    name: "Política de Privacidade",
+    name: "Política de privacidade",
     isLegal: true,
+  },
+  {
+    id: "9",
+    slug: "/mapa-de-cobertura",
+    name: "Mapa de cobertura",
+    isLegal: false,
   },
 ];

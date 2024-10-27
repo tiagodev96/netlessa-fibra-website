@@ -26,6 +26,8 @@ import ServiceTermsHeader from "./service-terms/service-terms-header";
 import ServiceTermsContent from "./service-terms/service-terms-content";
 import PrivacyHeader from "./privacy/privacy-header";
 import PrivacyContent from "./privacy/privacy-content";
+import CoverageMapHeader from "./coverage-map/coverage-map-header";
+import CoverageMap from "./coverage-map/coverage-map";
 
 export {
   Header,
@@ -56,4 +58,6 @@ export {
   ServiceTermsContent,
   PrivacyHeader,
   PrivacyContent,
+  CoverageMapHeader,
+  CoverageMap,
 };

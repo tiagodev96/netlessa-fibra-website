@@ -35,6 +35,7 @@ export const mockPagesFooter: Page[] = [
   { id: "4", name: "Fale conosco", slug: "/fale-conosco" },
   { id: "5", name: "FAQ", slug: "/faq" },
   { id: "6", name: "Blog", slug: "/blog" },
+  { id: "7", name: "Mapa de cobertura", slug: "/mapa-de-cobertura" },
 ];
 
 export const mockLegalPages: Page[] = [
