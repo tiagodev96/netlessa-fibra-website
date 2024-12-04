@@ -123,7 +123,7 @@ export const mockClientService = {
       },
       title: "Minha Fatura",
       description: "Mais facilidade para acessar sua fatura",
-      link: "https://wa.me/5571986064654",
+      link: "https://central.netlessa.com.br/central_assinante_web/login",
     },
     {
       id: "cta2",

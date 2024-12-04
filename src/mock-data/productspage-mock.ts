@@ -14,30 +14,6 @@ export const mockProductsPage = [
     plans: [
       {
         id: Math.random().toString(36).substr(2, 9),
-        name: "250 MEGA",
-        is_highlighted: false,
-        price: 80.0,
-        whatsapp_text:
-          "Oi, tudo bem? Me interessei pelo PLANO RESIDENCIAL 250 MEGA, R$80,00. Como posso contratar?",
-        features: [
-          {
-            id: Math.random().toString(36).substr(2, 9),
-            name: "Instalação grátis",
-            icon: {
-              url: "/product-plans/icons/icon-instalacao-gratis.png",
-            },
-          },
-          {
-            id: Math.random().toString(36).substr(2, 9),
-            name: "Fidelidade de 12 meses",
-            icon: {
-              url: "/product-plans/icons/icon-fidelidade-12-meses.png",
-            },
-          },
-        ],
-      },
-      {
-        id: Math.random().toString(36).substr(2, 9),
         name: "500 MEGA",
         is_highlighted: true,
         price: 79.99,
