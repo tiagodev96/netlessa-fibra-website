@@ -1,7 +1,10 @@
+import { ProductsSection } from "@/components";
+import { mockCompanyProductsList } from "@/mock-data/homepage-mock";
+
 export default function GrupoLessaPage() {
   return (
-    <div>
-      <h1>Grupo Lessa</h1>
+    <div className="bg-green">
+      <ProductsSection {...mockCompanyProductsList} />
     </div>
   );
 }

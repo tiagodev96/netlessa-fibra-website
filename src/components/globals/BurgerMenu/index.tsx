@@ -58,6 +58,7 @@ export default function BurgerMenu({ cta, isCompany }: BurguerMenuProps) {
                 href={page.slug}
                 onClick={toggleMenu}
                 className="text-lg hover:underline"
+                target={isCompany ? "_blank" : "_self"}
               >
                 {page.name}
               </Link>
