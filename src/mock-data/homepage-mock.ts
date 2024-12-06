@@ -10,7 +10,7 @@ export const mockCarousel = [
     ctas: [
       {
         label: "Assine já",
-        link: "https://wa.me/5571986064654",
+        link: "https://wa.me/5571986064654?text=Olá%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20plano%20de%20internet%20fibra%20de%20R%2479%2C90%20da%20NetLessa",
       },
     ],
     background: {

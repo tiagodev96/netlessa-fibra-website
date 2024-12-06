@@ -56,7 +56,7 @@ export default function Banner({ carousel }: BannerProps) {
                 />
                 <div className="flex gap-4 pl-8">
                   {slide.ctas.map((cta, index) => (
-                    <Button key={index} link={cta.link} isHero>
+                    <Button key={index} link={cta.link} isHero targetBlank>
                       {cta.label}
                     </Button>
                   ))}

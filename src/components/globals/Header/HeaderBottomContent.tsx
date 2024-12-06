@@ -3,16 +3,9 @@ import Link from "next/link";
 import React from "react";
 import Button from "../Button";
 import BurgerMenu from "../BurgerMenu";
+import { mockProducts } from "@/mock-data";
 
 type HeaderBottomContentProps = {
-  nav: {
-    id: string;
-    label: string;
-    link: string;
-    icon: {
-      url: string;
-    };
-  }[];
   logo: {
     url: string;
     alt: string;
@@ -25,19 +18,23 @@ type HeaderBottomContentProps = {
     id: string;
     slug: string;
     name: string;
+    isLegal: boolean;
   }[];
+  isCompany: boolean;
 };
 
 export default function HeaderBottomContent({
   logo,
-  nav,
   cta,
   pages,
+  isCompany,
 }: HeaderBottomContentProps) {
+  const products = isCompany ? null : mockProducts;
+
   return (
     <div className="flex justify-between section-container py-6">
-      <div className="relative w-52 h-12">
-        <Link href="/">
+      <div className="relative w-24 h-24">
+        <Link href={isCompany ? "/grupo-lessa" : "/"}>
           <Image
             src={logo.url as string}
             alt={logo.alt as string}
@@ -50,7 +47,7 @@ export default function HeaderBottomContent({
 
       <nav className="flex items-center gap-4 lg:gap-8">
         <ul className="hidden gap-4 lg:gap-8 lg:flex">
-          {nav?.map((item) => {
+          {products?.map((item) => {
             return (
               <Link
                 key={item.id}
@@ -73,7 +70,7 @@ export default function HeaderBottomContent({
         <div className="hidden xs:flex">
           <Button link={cta.link}>{cta.label}</Button>
         </div>
-        <BurgerMenu pages={pages} nav={nav} cta={cta} />
+        <BurgerMenu pages={pages} cta={cta} isCompany={isCompany} />
       </nav>
     </div>
   );

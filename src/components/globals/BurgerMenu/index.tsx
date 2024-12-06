@@ -12,16 +12,11 @@ import Link from "next/link";
 import Image from "next/image";
 import ButtonComponent from "@/components/globals/Button";
 import { Separator } from "@/components/ui/separator";
+import { mockPages, mockProducts } from "@/mock-data";
+import { mockProductsCompany } from "@/mock-data/products-mock";
+import { mockPagesCompany } from "@/mock-data/pages-mock";
 
 type BurguerMenuProps = {
-  nav: {
-    id: string;
-    label: string;
-    link: string;
-    icon: {
-      url: string;
-    };
-  }[];
   cta: {
     label: string;
     link: string;
@@ -32,10 +27,14 @@ type BurguerMenuProps = {
     name: string;
     isLegal: boolean;
   }[];
+  isCompany: boolean;
 };
 
-export default function BurgerMenu({ pages, cta, nav }: BurguerMenuProps) {
+export default function BurgerMenu({ cta, isCompany }: BurguerMenuProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const products = isCompany ? mockProductsCompany : mockProducts;
+
+  const pages = isCompany ? mockPagesCompany : mockPages;
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -86,7 +85,7 @@ export default function BurgerMenu({ pages, cta, nav }: BurguerMenuProps) {
           <SheetTitle className="text-blue mb-2 mt-8">Produtos</SheetTitle>
           <Separator className="mb-2" />
           <nav className="flex flex-col space-y-4">
-            {nav?.map((item) => {
+            {products?.map((item) => {
               return (
                 <Link
                   key={item.id}

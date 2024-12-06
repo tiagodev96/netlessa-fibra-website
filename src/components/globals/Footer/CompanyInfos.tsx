@@ -85,7 +85,7 @@ const CompanyInfos: FC<CompanyInfosProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-8">
-      <div className="relative w-52 h-12">
+      <div className="relative w-24 h-24">
         <Link href="/">
           <Image
             src={logo.url ?? ""}

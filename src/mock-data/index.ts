@@ -1,6 +1,6 @@
 // Header
 import { mockPages } from "./pages-mock";
-import { mockProducts } from "./products-mock";
+import { mockProducts, mockProductsCompany } from "./products-mock";
 import { mockLogo } from "./logo-mock";
 import { mockHeaderCta } from "./mock-header-cta";
 // Footer
@@ -25,6 +25,7 @@ import { mockProductsPage } from "./productspage-mock";
 export {
   mockPages,
   mockProducts,
+  mockProductsCompany,
   mockLogo,
   mockHeaderCta,
   mockCompanyInfos,

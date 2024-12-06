@@ -7,7 +7,7 @@ import Button from "../Button";
 
 export default function HeaderTopContent() {
   const router = usePathname();
-  const isCompany = router.startsWith("/empresas");
+  const isCompany = router.startsWith("/grupo-lessa");
 
   return (
     <div className="border-b border-black">
@@ -19,14 +19,29 @@ export default function HeaderTopContent() {
           >
             Para você
           </Link>
+          <Link
+            href="/grupo-lessa"
+            className={`text-[14px] ${isCompany && "font-medium"}`}
+          >
+            Para sua empresa
+          </Link>
         </div>
 
-        <Button
-          link="https://wa.me/5571986064654"
-          icon={<FaWhatsapp size={24} />}
-        >
-          Atendimento
-        </Button>
+        <div className="flex gap-3">
+          <Button
+            link="https://wa.me/5571986064654"
+            icon={<FaWhatsapp size={24} />}
+            targetBlank
+          >
+            Atendimento
+          </Button>
+          <Button
+            link="https://central.netlessa.com.br/central_assinante_web/login"
+            targetBlank
+          >
+            Central do Cliente
+          </Button>
+        </div>
       </div>
     </div>
   );

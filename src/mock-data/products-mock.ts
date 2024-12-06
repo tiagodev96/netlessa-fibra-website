@@ -48,3 +48,86 @@ export const mockProducts = [
     },
   },
 ];
+
+export const mockProductsCompany = [
+  {
+    id: "1",
+    label: "Lessa Mídia",
+    link: "grupo-lessa/lessa-midia",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "2",
+    label: "Locação de Rádio",
+    link: "grupo-lessa/locacao-de-radio",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "3",
+    label: "Link Dedicado",
+    link: "grupo-lessa/link-dedicado",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "4",
+    label: "Armário Inteligente",
+    link: "grupo-lessa/armario-inteligente",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "5",
+    label: "Portaria Autônoma",
+    link: "grupo-lessa/portaria-autonoma",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "6",
+    label: "Sistema de Gestão",
+    link: "grupo-lessa/sistema-de-gestao",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "7",
+    label: "Telefonia",
+    link: "grupo-lessa/telefonia",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "8",
+    label: "Câmera",
+    link: "grupo-lessa/camera",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "9",
+    label: "TV",
+    link: "grupo-lessa/tv",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+  {
+    id: "10",
+    label: "Internet Fibra",
+    link: "grupo-lessa/internet-fibra",
+    icon: {
+      url: "/products/icon-planos-residenciais.png",
+    },
+  },
+];
