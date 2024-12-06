@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Net Lessa Fibra | Internet Fibra Óptica",
+    title: "Net Lessa Fibra",
     description:
       "Empresa líder em internet fibra óptica e telecomunicações. Oferecemos planos residenciais e corporativos com a melhor velocidade e estabilidade.",
     url: "https://netlessafibra.com.br",
