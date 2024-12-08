@@ -39,7 +39,9 @@ export default function ProductCard({ product }: ProductCardProps) {
         <p className="paragraph max-w-[405px] mb-3">{description}</p>
       </div>
 
-      <Button link={link}>{isCompany ? "Fale Conosco" : "Ver Página"}</Button>
+      <Button link={link} targetBlank={isCompany}>
+        {isCompany ? "Fale Conosco" : "Ver Página"}
+      </Button>
     </div>
   );
 }

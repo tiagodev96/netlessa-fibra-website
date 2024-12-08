@@ -40,7 +40,7 @@ export const mockCompanyProductsList = {
       name: "Lessa Mídia",
       description:
         "Tela em elevador. Tenha a página do síndico e administração de condomínio para postar diariamente.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Lessa%20Mídia",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Lessa%20Mídia",
       cover_image: {
         id: "img1",
         url: "/products/lessa-midia.png",
@@ -51,7 +51,7 @@ export const mockCompanyProductsList = {
       id: 2,
       name: "Locação de Rádio",
       description: "Comunicação e segurança para Condomínios e Empresas",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Locação%20de%20Rádio",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Locação%20de%20Rádio",
       cover_image: {
         id: "img2",
         url: "/products/locacao-de-radio.png",
@@ -63,7 +63,7 @@ export const mockCompanyProductsList = {
       name: "Link Dedicado",
       description:
         "Link exclusivo que a sua empresa pode usar para transmissão de dados.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Link%20Dedicado",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Link%20Dedicado",
       cover_image: {
         id: "img3",
         url: "/products/link-dedicado.png",
@@ -75,7 +75,7 @@ export const mockCompanyProductsList = {
       name: "Armário Inteligente",
       description:
         "Entrega sem contato. Garante privacidade, segurança e redução de custos com extravios. O serviço é ágil, lucrativo e personalizado, credenciado pelos Correios desde 2019.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Armário%20Inteligente",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Armário%20Inteligente",
       cover_image: {
         id: "img4",
         url: "/products/armario-inteligente.png",
@@ -87,7 +87,7 @@ export const mockCompanyProductsList = {
       name: "Portaria Autônoma",
       description:
         "O sistema de interfonia permite que visitantes liguem para os moradores via reconhecimento QR Code, diretamente para a unidade ou celular.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Portaria%20Autônoma",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Portaria%20Autônoma",
       cover_image: {
         id: "img5",
         url: "/products/portaria-autonoma.png",
@@ -98,7 +98,7 @@ export const mockCompanyProductsList = {
       id: 6,
       name: "Sistema de Gestão",
       description: "A gestão completa de tecnologia para seu condomínio.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Sistema%20de%20Gestão",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Sistema%20de%20Gestão",
       cover_image: {
         id: "img6",
         url: "/products/sistema-de-gestao.png",
@@ -110,7 +110,7 @@ export const mockCompanyProductsList = {
       name: "Telefonia",
       description:
         "A melhor solução de telefonia fixa ou móvel para seu condomínio ou empresa.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Telefonia",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Telefonia",
       cover_image: {
         id: "img7",
         url: "/products/telefonia.png",
@@ -122,7 +122,7 @@ export const mockCompanyProductsList = {
       name: "Câmera",
       description:
         "Monitore o seu condomínio ou empresa com segurança e praticidade. Com acesso a nuvem, você pode monitorar o seu condomínio ou empresa de qualquer lugar.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Câmera",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Câmera",
       cover_image: {
         id: "img8",
         url: "/products/camera.png",
@@ -133,7 +133,7 @@ export const mockCompanyProductsList = {
       id: 9,
       name: "TV por assinatura",
       description: "A melhor TV por assinatura para seu condomínio ou empresa.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20TV%20por%20assinatura",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20TV%20por%20assinatura",
       cover_image: {
         id: "img9",
         url: "/products/tv-por-assinatura.png",
@@ -144,7 +144,7 @@ export const mockCompanyProductsList = {
       id: 10,
       name: "Internet Fibra",
       description: "A melhor internet fibra para seu condomínio ou empresa.",
-      link: "https://wa.me/5571986064654?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Internet%20Fibra",
+      link: "https://wa.me/5571996455433?text=Olá%20gostaria%20de%20conversar%20sobre%20o%20produto%20Internet%20Fibra",
       cover_image: {
         id: "img10",
         url: "/products/capa-sua-empresa-conectada.png",
