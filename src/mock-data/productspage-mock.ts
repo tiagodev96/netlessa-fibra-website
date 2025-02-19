@@ -22,13 +22,6 @@ export const mockProductsPage = [
         features: [
           {
             id: Math.random().toString(36).substr(2, 9),
-            name: "Instalação grátis",
-            icon: {
-              url: "/product-plans/icons/icon-instalacao-gratis-destaque.png",
-            },
-          },
-          {
-            id: Math.random().toString(36).substr(2, 9),
             name: "Fidelidade de 12 meses",
             icon: {
               url: "/product-plans/icons/icon-fidelidade-12-meses-destaque.png",
@@ -51,13 +44,6 @@ export const mockProductsPage = [
         whatsapp_text:
           "Oi, tudo bem? Me interessei pelo PLANO RESIDENCIAL 750 MEGA, R$159,99. Como posso contratar?",
         features: [
-          {
-            id: Math.random().toString(36).substr(2, 9),
-            name: "Instalação grátis",
-            icon: {
-              url: "/product-plans/icons/icon-instalacao-gratis.png",
-            },
-          },
           {
             id: Math.random().toString(36).substr(2, 9),
             name: "Fidelidade de 12 meses",
@@ -96,13 +82,6 @@ export const mockProductsPage = [
         whatsapp_text:
           "Oi, tudo bem? Me interessei pelo PLANO RESIDENCIAL 1000 MEGA, R$199,99. Como posso contratar?",
         features: [
-          {
-            id: Math.random().toString(36).substr(2, 9),
-            name: "Instalação grátis",
-            icon: {
-              url: "/product-plans/icons/icon-instalacao-gratis.png",
-            },
-          },
           {
             id: Math.random().toString(36).substr(2, 9),
             name: "Fidelidade de 12 meses",

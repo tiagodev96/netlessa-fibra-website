@@ -25,7 +25,7 @@ const faqItems = [
   {
     question: "O que está incluído no pacote de internet fibra?",
     answer:
-      "Nosso pacote de internet fibra inclui instalação gratuita, modem, suporte técnico 24/7 e garantia de satisfação.",
+      "Nosso pacote de internet fibra inclui modem, suporte técnico 24/7 e garantia de satisfação.",
   },
   {
     question: "A internet fibra é adequada para jogos online?",
