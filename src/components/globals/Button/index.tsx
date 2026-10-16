@@ -50,6 +50,7 @@ export default function Button({
 
   return (
     <button
+      type="button"
       onClick={handleClick}
       className={`${baseButtonClasses} ${buttonClasses}`}
     >
