@@ -14,6 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://netlessafibra.com.br"),
   title: "Net Lessa Fibra",
   description:
     "Empresa líder em internet fibra óptica e telecomunicações. Oferecemos planos residenciais e corporativos com a melhor velocidade e estabilidade.",
